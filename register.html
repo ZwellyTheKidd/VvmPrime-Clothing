@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VvvmPrime-Register</title>
+    <link rel="icon" type="image/x-icon" href="img/1.png">
+    <!-- CSS only -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+        
+<div class="main">
+
+    <div class="dim">
+     <div class="darkish"></div>
+ 
+     <div class="grade">
+       <div class="form">
+        <div class="logo"><img src="img/2.png" alt=""></div>
+        <a class="a-tag" href="login.html"> <span><i class="fa-solid fa-arrow-left"></i></span> BACK TO LOGIN</a>
+        <h4 class="first-h">REGISTER</h4>
+        <div class="inside">
+          <h6 class="text">First name </h6>
+          <input type="text" id="myName" placeholder="Enter name">
+          <h6 class="text">Last name  </h6>
+          <input type="text" id="surname"  placeholder="Enter lastname">
+
+          <h6 class="text">Gender  </h6>
+          <div class="gender">
+            <input class="checkbox" type="checkbox" id="myCheck1" value="Male">
+            <h6>Male  </h6>
+            <input class="checkbox" type="checkbox" id="myCheck2" value="Women">
+            <h6>Women  </h6>
+            <input class="checkbox" type="checkbox" id="myCheck3" value="Other">
+           <h6>Other  </h6> 
+          </div>
+
+          <h4>LOGIN<span class="red">DETAILS</span></h4>
+
+          <h6 class="text">Email </h6>
+          <input type="email" id="email" placeholder="Enter email">
+          <div class="show-passw">
+            <div class="left"> <h6 class="text">Password </h6></div>
+            <div class="right"> <span><i class="fa-regular fa-eye"></i></span><span>Show</span></div>
+          </div>
+          <input type="password" id="password" placeholder="Enter Password">
+          <h6>Must be at least 8 characters,with (uppercase,lowercase,number and a special character) </h6>
+          <div class="keep-log"> 
+            <div class="left">
+            <input type="checkbox">
+            </div>
+            <div class="right"> 
+              <h6 class="text">Yes,I am over 18years old</h6>
+            </div>
+        </div>
+
+        <div class="re-form">
+
+          <div class="head-sub">
+            <h5>MAKE SURE YOU NEVER MISS A THING WITH VVMprime</h5>
+            <h5> KEEP UP WITH THE LATEST VVMprime PROMOTIONS.</h5>
+            <h5> PRODUCTS AND MEWS</h5>
+          </div>
+
+          <div class="body-sub">
+              <div class="left">
+              <input type="checkbox">
+              </div>
+              <div class="right"> 
+                <p>Yes, I want to receive the latest VVMprime offers and product news through ads shown
+                   across digital media based on my interactions with VVMprime and behavior on platforms 
+                   like Google and Facebook. I know I can choose to stop sharing my personal data at any time.</p>
+              </div>
+          </div>
+        
+          <button onclick="register()">REGISTER <span><i class="fa-solid fa-arrow-right"></i></span></button>
+          <h6 class="down">By clicking "Register" you agree to the <a href="#"> VVMprime Terms&Conditions</a></h6>
+        </div>
+         
+        </div>
+       </div>
+      </div>
+    </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
+
+    <script>
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyDg8miajbU3fLmgwqMVJaj6KcJXOwebR98",
+          authDomain: "vvmprime-web.firebaseapp.com",
+          projectId: "vvmprime-web",
+          storageBucket: "vvmprime-web.appspot.com",
+          messagingSenderId: "515213816594",
+          appId: "1:515213816594:web:1ca08b832f0029545bb9cb",
+          measurementId: "G-S9614RG1BD"
+      };
+      
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();//focus on authentication login,registering"auth is used in js" 
+        const db = firebase.firestore();//focus on firestore"to store text any text" login,registering"auth is used in js"
+        db.settings("timestampsInSnapshots:true");
+        firebase.analytics();
+        </script>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>              
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6639192a02.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="javascript/register.js"></script>
+    
+</body>
+</html>
+</body>
+</html>

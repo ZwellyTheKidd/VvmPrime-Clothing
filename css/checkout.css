@@ -1,0 +1,453 @@
+
+body{
+
+    position: relative;
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+}
+body button:hover{
+
+  padding: 15px;
+
+}
+*{
+  list-style: none;
+}
+.line{
+    width: 100%;
+    border: 2px solid red;
+}
+nav{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.52);
+    z-index: 1000000;
+    width: 100%;
+    padding-left: 60px;
+   
+}
+.center-nav{
+    position: relative;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.center-nav img{
+    height: 100px;
+}
+.left-nav{
+
+    position: relative;
+    width: 20%; 
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+  body {
+      font-family: "Lato", sans-serif;
+      transition: background-color .3s;
+    }
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow: hidden;
+      padding-top: 60px;
+      transition: all 0.3s ease;
+    }
+    .sidenav header{
+      font-size: 25px;
+      text-align: center;
+      line-height: 70px;
+      margin-top: -50px;
+      margin-right: 20px;
+      color: #818181;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+    .sidenav a{
+      text-decoration: none;
+      color: #818181;
+    }
+    .sidenav ul a{
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #818181;
+      display: block;
+      transition: 0.3s ease;
+      width: 100%;
+      height: 100%;
+      line-height: 40px;
+      box-sizing: border-box;
+      border-top: 1px solid rgba(255,255,255,.1 );
+    }
+    .sidenav ul a:hover {
+      color: white;
+      padding-left: 50px;
+    }
+    .sidenav a:hover {
+      color: red;
+    }
+    .sidenav ul a i {
+  
+      margin-right: 15px;
+    }
+    
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+  .sidenav ul button{
+
+    border-radius: 20px;
+    border: 2px solid red;
+    padding: 10px;
+    background-color: rgba(31, 26, 26, 0.856);
+    color: white;
+    margin: 10px;
+    
+  }
+  .sidenav ul button:hover {
+    color: white;
+    padding-left: 15px;
+  }
+    
+  #main {
+    transition: margin-left .3s;
+    padding: 16px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .right-nav{
+      position: relative;
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 15px;
+  }
+  .right-nav .wish{
+      display: flex;
+      flex-direction: row;
+  }
+  .right-nav .cart{
+      display: flex;
+      flex-direction: row;
+  }
+  .right-nav .d-flex{
+  
+      background-color: red;
+      border-radius: 50%;
+      font-size: 1.3rem;
+      height: 2rem;
+      width: 2rem;
+      justify-content: center;
+      top: 3px;
+      right: -3px;
+      color: white;
+  }
+  
+  .right-nav span{
+      font-size: 30px;
+      cursor: pointer;
+  }
+  .right-nav .icons:hover{
+      font-size: 40px;
+  }
+  .right-nav .y-line{
+      height: 40px;
+      border: 1px solid rgba(0,0,0,0.52);
+  }
+
+/*-------------------------------------------------------------------------------------*/
+
+.learn-more{
+
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.877);
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.52);
+}
+.learn-more span{
+    color: white;
+    font-weight:bold;
+
+}
+
+
+
+/*-------------------------------------------------------------------------------------*/
+
+.head-info{
+  background-image: url(../img/6AUP.gif);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+transform: translateZ(0);
+will-change: transform;
+  color: white;
+}
+.head-info .up{
+
+  position: relative;
+  height: 70%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20%;
+}
+.up .r-line{
+  width: 20%;
+}
+.up .r-line a{
+  display: flex;
+  color: red;
+  font-weight: bold;
+}
+.up .l-line{
+  width: 60%;
+}
+.up .l-line h4{
+  font-weight:bolder;
+  font-size: 40px;
+}
+.up .l-line h4 .red{
+  color: red;
+  text-decoration: none;
+}
+/*-------------------------------------------------------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+.main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+ button{
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: red;
+   color: white;
+    margin: 5px;
+    width: 60%;
+    cursor: pointer;
+    transition: 1.5s;
+  }
+ button:hover{
+    background-color: transparent;
+    color: black;
+    border: 2px solid red;
+  }
+.btn {
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: red;
+   color: white;
+    margin: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: black;
+    border: 2px solid red;
+ 
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+}
+
+  /*-------------------------------------------------------------------------------------*/
+  .more-info{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .more-info h2{
+    font-weight:800;
+    height: 20px;
+  }
+  .copyright{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+  }
+  .copyright .left{
+    width: 30%;
+  }
+  .copyright .center{
+    width: 30%;
+  }
+  .copyright .right{
+    width: 30%;
+  }
+  
+.copyright .right span{
+
+   font-size: 25px;
+   margin-right: 20px;
+}
+.copyright .right span .fa-facebook:hover{
+
+    color: rgb(59, 89, 152);
+    cursor: pointer;
+}
+.copyright .right span .fa-instagram:hover{
+    color: red;
+    cursor: pointer;
+}
+.copyright .right span .fa-twitter:hover{
+    color: rgb(0, 172, 238);
+    cursor: pointer;
+}
+.copyright .right span .fa-linkedin:hover{
+    color: rgb(0, 118, 168);
+    cursor: pointer;
+}
+.info-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: #f2f2f2;
+    padding: 20px 20px 15px 80px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+
+
+  /*-------------------------------------------------------------------------------------*/
